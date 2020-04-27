@@ -1,11 +1,12 @@
+
 version: '3'
 services:
   nginx:
-    image: rossifumax/nginx-4dvop
+    image: <dockerhub nginx-4dvop image name>
     ports:
       - "8080:8080"
   haproxy:
-    image: rossifumax/haproxy-4dvop
+    image: <dockerhub haproxy-4dvop image name>
     ports:
       - "80:80"
     depends_on:
